@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #070a33bf;
+}
+
+.container-flex-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+.container-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 115px 60px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.title-h1 {
+  font-weight: 700;
+  font-size: 80px;
+  color: whitesmoke;
+  line-height: 75px;
+}
+
+.sub-p {
+  font-weight: 200;
+  font-size: 20px;
+  color: whitesmoke;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.mark {
+  color: rgb(212, 111, 29);
+}
+
+.container-right {
+  width: 30%;
+  /* height: 150vh; */
+  display: flex;
+  flex-direction: column;
+  background-color: #00000061;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.label {
+  color: white;
+  font-weight: 300 !important;
+  margin: 0 !important;
+}
+
+.label-p {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 100;
+  color: white;
+}
+
+.control-container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.paragraph {
+  color: white;
+  font-weight: 300;
+}
+
+#radio {
+  margin-right: 10px;
+}
+
+.validation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 730px) {
+  body {
+    align-content: center;
+  }
+  .container-flex-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .container-left {
+    width: auto;
+    height: auto;
+    padding: 150px 20px;
+  }
+  .container-right {
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0;
+  }
+  .title-h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: whitesmoke;
+    line-height: 70px;
+  }
+
+  .sub-p {
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: whitesmoke;
+  }
+}
+
+@media only screen and (min-width: 731px) and (max-width: 980px) {
+  .container-left {
+    padding-top: 80px;
+  }
+  .container-right {
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+    margin-right: 0px;
+  }
+  fieldset:nth-last-child(),
+  .columns:nth-last-child() {
+    padding: 0 11px;
+  }
+}

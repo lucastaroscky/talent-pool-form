@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    form
+  </title>
+  <link rel="stylesheet" href="/libs/bulma-0.8.2/css/bulma.css">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="/script.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="/script.js"></script>
+</head>
+
+<body>
+  <section class="container-flex-top">
+    <section class="container-left">
+      <h1 class="title-h1">Nenhuma vaga deu <span class="mark">match?</span></h1>
+      <p class="sub-p">fica tranquilo que temos um banco de dados que é constantemente consultado, é só se cadastrar
+        aqui do lado e anexar seu currículo.</p>
+      <p class="sub-p">Estaremos torcendo por você!</p>
+    </section>
+    <section class="container-right">
+      <div class="container">
+        <form action="">
+          <fieldset>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="">Nome</label>
+                <input class="input" required type="text" maxlength="40" id="name" placeholder="Nome Completo">
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" required maxlength="50" id="email" class="input" type="text"
+                    placeholder="exemplo@exemplo.com" value="">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="">CPF</label>
+                <input class="input" required type="text" maxlength="11" id="cpf" placeholder="000.000.000-00">
+              </div>
+              <div class="field">
+                <label class="label" for="">Endereço</label>
+                <input class="input" required type="text" maxlength="200" id="adress"
+                  placeholder="Avenida Paulista, 100">
+              </div>
+              <div class="field">
+                <label class="label" for="">Cidade</label>
+                <input class="input" required type="text" maxlength="28" id="city" placeholder="São Paulo">
+              </div>
+              <div class="field">
+                <label class="label">Estado</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="state">
+                      <option>Selecione o Estado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <div class="control-container-flex">
+                    <p class="paragraph">Complemento</p>
+                    <label class="label-p" for="">
+                      <input type="radio" class="radio" id="radio" name="home">
+                      Casa
+                    </label>
+                    <label class="label-p" class="radio" for="radio">
+                      <input type="radio" id="radio" name="home">
+                      Apartamento
+                    </label>
+                  </div>
+                </div>
+              </div>
+          </fieldset><br>
+          <fieldset>
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Conte um pouco sobre você!</label>
+                  <div class="control">
+                    <textarea id="about" class="textarea" placeholder=""></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="">Ultimo Cargo</label>
+                  <input class="input" required type="text" maxlength="500" id="last-position">
+                </div>
+                <div class="field">
+                  <label class="label" for="date">Data de Saída</label>
+                  <input class="input" type="date" name="date" id="date">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form><br>
+        <div class="columns">
+          <div class="column">
+            <div class="field">
+             <a href="#validation"><button class="button is-success is-small" type="submit" id="submit">Submit</button></a>
+              <button class="button is-danger is-small" type="reset" id="clear">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="validation" id="validation">
+  </section>
+
+  </div>
+</body>
+
+</html>
